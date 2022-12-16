@@ -16,9 +16,9 @@
                 <div class="logo_name">
                     Emma Store
                 </div> 
-                <i class='bx bx-menu' id="btn"></i>
+                
             </div> 
-            
+            <i class='bx bx-menu' id="btn"></i>
             <ul class="nav_list">
                 <li>
                     <i class='bx bx-search' ></i>
@@ -95,9 +95,11 @@
                                 Software Developer
                             </div>
                         </div>
-                        <i class="bx bx-log-out" id="log-out"></i>
+                        <i class="bx bx-log-out" id="log_out"></i>
                     </div>
+                    
                 </div>
+                
             </div>
         </div>
     </div>
@@ -107,13 +109,14 @@
         </div>
     </div>
     <script>
-        let btn = document.querySelector('#btn');
-        let sidebar = document.querySelector('.sidebar');
-        let searchBtn = document.querySelector('.bx-search');
-        btn.onClick =function(){
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick= function(){
             sidebar.classList.toggle("active");
         }
-        btn.searchBtn =function(){
+        searchBtn.onclick= function(){
             sidebar.classList.toggle("active");
         }
     </script>
